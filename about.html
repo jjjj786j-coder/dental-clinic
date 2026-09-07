@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Lumina Dental Clinic</title>
+  <title>About Us | Al-Razi Dental & Maxillofacial Care Lahore</title>
+  <meta name="description" content="Meet Prof. Dr. Tariq Mahmood and Dr. Zainab Bilal at Al-Razi Dental Clinic in Gulberg III, Lahore. PMDC registered specialists in Maxillofacial Surgery & Orthodontics.">
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -11,23 +12,21 @@
       theme: {
         extend: {
           colors: {
-            primary: 'var(--primary)',
-            accent: 'var(--accent)',
-            bg: 'var(--bg)',
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+            }
           }
         }
       }
     }
   </script>
   <style>
-    :root {
-      --primary: #0e7490;
-      --primary-hover: #0891b2;
-      --accent: #06b6d4;
-      --bg: #f8fafc;
-    }
     body {
-      background-color: var(--bg);
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     }
   </style>
@@ -43,35 +42,63 @@
     });
   </script>
 </head>
-<body class="text-slate-800 flex flex-col min-h-screen">
+<body class="text-slate-800 bg-slate-50 flex flex-col min-h-screen">
 
-  <!-- NAVBAR -->
-  <nav class="bg-white shadow-sm sticky top-0 z-50">
+  <!-- TOP INFO BAR -->
+  <div class="bg-slate-900 text-slate-300 text-xs py-2.5 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex flex-wrap items-center justify-center sm:justify-start gap-4">
+        <span class="flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          Suite 302, Al-Hafeez Heights, Ghalib Road, Gulberg III, Lahore
+        </span>
+        <span class="hidden md:inline text-slate-600">|</span>
+        <span class="hidden md:flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          Mon – Fri: 10:00 AM – 8:00 PM | Sat: 11:00 AM – 6:00 PM
+        </span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:+924235789012" class="hover:text-cyan-400 transition flex items-center gap-1 font-medium">
+          <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h32a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          +92 42 35789012
+        </a>
+        <a href="https://wa.me/923018472915?text=Hello%2C%20I%20want%20to%20book%20a%20dental%20appointment" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1">
+          WhatsApp: +92 301 8472915
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="bg-white shadow-sm sticky top-0 z-40 border-b border-slate-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-20 items-center">
-        <!-- Logo -->
         <a href="index.html" class="flex items-center space-x-3 group">
-          <div class="w-10 h-10 rounded-xl bg-cyan-700 text-white flex items-center justify-center shadow-md group-hover:bg-cyan-800 transition">
+          <div class="w-11 h-11 rounded-xl bg-brand-700 text-white flex items-center justify-center shadow-md group-hover:bg-brand-800 transition">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L5.594 15.12a2 2 0 00-1.583.336l-1.096.822A2 2 0 002.04 18.28l1.096.822a2 2 0 001.583.336l2.387-.477a6 6 0 013.86.517l.318.158a6 6 0 003.86.517l2.387-.477a2 2 0 001.022-.547l1.096-.822a2 2 0 00.875-1.996l-1.096-.822zM12 2a4 4 0 00-4 4v4a4 4 0 008 0V6a4 4 0 00-4-4z" />
             </svg>
           </div>
-          <span class="text-xl font-bold text-slate-800 tracking-tight">Lumina<span class="text-cyan-700">Dental</span></span>
+          <div>
+            <span class="text-xl font-extrabold text-slate-900 tracking-tight block">Al-Razi <span class="text-brand-700">Dental</span></span>
+            <span class="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">Maxillofacial & Implant Care</span>
+          </div>
         </a>
 
-        <!-- Desktop Navigation Links -->
         <div class="hidden md:flex items-center space-x-8">
-          <a href="index.html" class="font-medium text-slate-600 hover:text-cyan-700 transition">Home</a>
-          <a href="about.html" class="font-semibold text-cyan-700">About Us</a>
-          <a href="services.html" class="font-medium text-slate-600 hover:text-cyan-700 transition">Services</a>
-          <a href="faq.html" class="font-medium text-slate-600 hover:text-cyan-700 transition">FAQ</a>
-          <a href="contact.html" class="font-medium text-slate-600 hover:text-cyan-700 transition">Contact</a>
-          <a href="contact.html" class="px-5 py-2.5 rounded-lg bg-cyan-700 text-white font-medium hover:bg-cyan-800 shadow-sm transition">Book Appointment</a>
+          <a href="index.html" class="font-medium text-slate-600 hover:text-brand-700 transition py-1">Home</a>
+          <a href="about.html" class="font-bold text-brand-700 border-b-2 border-brand-700 py-1">About Us</a>
+          <a href="services.html" class="font-medium text-slate-600 hover:text-brand-700 transition py-1">Treatments</a>
+          <a href="faq.html" class="font-medium text-slate-600 hover:text-brand-700 transition py-1">FAQ</a>
+          <a href="contact.html" class="font-medium text-slate-600 hover:text-brand-700 transition py-1">Contact & Location</a>
+          <a href="contact.html" class="px-5 py-2.5 rounded-lg bg-brand-700 text-white font-semibold text-sm hover:bg-brand-800 shadow-sm transition">
+            Book Appointment
+          </a>
         </div>
 
-        <!-- Mobile Hamburger Button -->
         <div class="md:hidden flex items-center">
-          <button id="mobile-menu-btn" aria-label="Toggle menu" class="text-slate-600 hover:text-cyan-700 focus:outline-none p-2">
+          <button id="mobile-menu-btn" aria-label="Toggle menu" class="text-slate-700 p-2 hover:text-brand-700">
             <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -80,134 +107,164 @@
       </div>
     </div>
 
-    <!-- Mobile Dropdown Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 pt-2 pb-6 space-y-3">
-      <a href="index.html" class="block py-2 text-slate-700 hover:text-cyan-700 font-medium border-b border-slate-50">Home</a>
-      <a href="about.html" class="block py-2 text-cyan-700 font-semibold border-b border-slate-50">About Us</a>
-      <a href="services.html" class="block py-2 text-slate-700 hover:text-cyan-700 font-medium border-b border-slate-50">Services</a>
-      <a href="faq.html" class="block py-2 text-slate-700 hover:text-cyan-700 font-medium border-b border-slate-50">FAQ</a>
-      <a href="contact.html" class="block py-2 text-slate-700 hover:text-cyan-700 font-medium border-b border-slate-50">Contact</a>
-      <a href="contact.html" class="block text-center mt-4 w-full px-5 py-3 rounded-lg bg-cyan-700 text-white font-medium hover:bg-cyan-800 transition">Book Appointment</a>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 pt-3 pb-6 space-y-3">
+      <a href="index.html" class="block py-2 text-slate-700 hover:text-brand-700 font-medium border-b border-slate-50">Home</a>
+      <a href="about.html" class="block py-2 text-brand-700 font-bold border-b border-slate-50">About Us</a>
+      <a href="services.html" class="block py-2 text-slate-700 hover:text-brand-700 font-medium border-b border-slate-50">Treatments</a>
+      <a href="faq.html" class="block py-2 text-slate-700 hover:text-brand-700 font-medium border-b border-slate-50">FAQ</a>
+      <a href="contact.html" class="block py-2 text-slate-700 hover:text-brand-700 font-medium border-b border-slate-50">Contact & Location</a>
+      <a href="contact.html" class="block text-center mt-4 w-full px-5 py-3 rounded-lg bg-brand-700 text-white font-bold transition">Book Appointment</a>
     </div>
   </nav>
 
   <!-- PAGE HEADER -->
-  <section class="bg-gradient-to-r from-cyan-800 to-cyan-900 text-white py-16">
+  <section class="bg-gradient-to-r from-brand-800 to-brand-900 text-white py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h1 class="text-4xl font-extrabold tracking-tight">About Lumina Dental</h1>
+      <div class="inline-flex items-center space-x-2 bg-brand-700/60 px-3 py-1 rounded-full text-xs font-semibold text-cyan-200 mb-3 border border-cyan-500/30">
+        <span>PMDC & WHO Sterilization Certified</span>
+      </div>
+      <h1 class="text-4xl font-extrabold tracking-tight">About Al-Razi Dental</h1>
       <p class="text-cyan-100 max-w-2xl mx-auto mt-3 text-lg">
-        Dedicated to providing compassionate, world-class oral care for our community.
+        Hospital-grade surgical precision, advanced orthodontics, and restorative dental excellence in Gulberg III, Lahore.
       </p>
     </div>
   </section>
 
-  <!-- MISSION & STORY -->
+  <!-- CLINIC PHILOSOPHY & STORY -->
   <section class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <h2 class="text-xs font-bold text-cyan-700 uppercase tracking-widest mb-2">Our Story</h2>
-          <h3 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">Redefining the Dental Care Experience</h3>
-          <p class="text-slate-600 leading-relaxed mb-4">
-            Founded in 2011, Lumina Dental Clinic was created with a clear vision: to eliminate the stress and anxiety traditionally associated with visiting the dentist.
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <h2 class="text-xs font-bold text-brand-700 uppercase tracking-widest">Academic Clinical Standards</h2>
+          <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Pioneering Maxillofacial & Dental Healthcare in Lahore</h3>
+          
+          <p class="text-slate-600 leading-relaxed text-base">
+            Al-Razi Dental & Maxillofacial Care was established by <strong>Prof. Dr. Tariq Mahmood</strong> to bridge the gap between private dental clinics and tertiary hospital surgical standards. Located at Al-Hafeez Heights in Gulberg III, our practice combines academic expertise with state-of-the-art digital dental technologies.
           </p>
-          <p class="text-slate-600 leading-relaxed mb-6">
-            We combine warm, personalized attention with cutting-edge dental technology to deliver treatments that are efficient, painless, and tailored to each patient's individual needs.
+
+          <p class="text-slate-600 leading-relaxed text-base">
+            We adhere strictly to World Health Organization (WHO) cross-infection control guidelines. Every instrument undergoes multi-stage ultrasonic cleaning and Class-B vacuum autoclaving before single-patient use.
           </p>
+
           <div class="grid grid-cols-2 gap-4 pt-2">
-            <div class="p-4 bg-cyan-50 rounded-xl border border-cyan-100">
-              <h4 class="font-bold text-slate-900 text-lg">Modern Tech</h4>
-              <p class="text-xs text-slate-600 mt-1">3D imaging & ultra-gentle laser dentistry.</p>
+            <div class="p-4 bg-sky-50 rounded-xl border border-sky-100">
+              <h4 class="font-bold text-slate-900 text-base">Hospital-Grade Sterilization</h4>
+              <p class="text-xs text-slate-600 mt-1">Class-B autoclaves & WHO verified infection control protocols.</p>
             </div>
-            <div class="p-4 bg-cyan-50 rounded-xl border border-cyan-100">
-              <h4 class="font-bold text-slate-900 text-lg">Comfort First</h4>
-              <p class="text-xs text-slate-600 mt-1">Relaxing atmosphere with sedation options.</p>
+            <div class="p-4 bg-sky-50 rounded-xl border border-sky-100">
+              <h4 class="font-bold text-slate-900 text-base">Low-Radiation CBCT Imaging</h4>
+              <p class="text-xs text-slate-600 mt-1">3D digital bone density scanning for implants & surgeries.</p>
             </div>
           </div>
         </div>
-        <div class="relative">
-          <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=800&q=80" alt="Lumina Dental Office interior" class="rounded-2xl shadow-xl w-full object-cover">
+
+        <div class="lg:col-span-6 relative">
+          <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+            <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=1000&q=80" alt="Al-Razi Dental Clinic Suite Interior" class="w-full h-[440px] object-cover">
+          </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- MEET THE TEAM -->
-  <section class="py-20 bg-slate-50 border-t border-slate-100">
+  <!-- MEET THE SPECIALISTS -->
+  <section class="py-20 bg-slate-50 border-t border-slate-200/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-xs font-bold text-cyan-700 uppercase tracking-widest mb-2">Our Specialists</h2>
-        <p class="text-3xl sm:text-4xl font-bold text-slate-900">Meet Our Experienced Team</p>
-        <p class="text-slate-600 mt-4">Our doctors and hygienists bring decades of combined experience and genuine care to every appointment.</p>
+        <h2 class="text-xs font-bold text-brand-700 uppercase tracking-widest mb-2">Our Clinical Team</h2>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Highly Qualified Specialists</h3>
+        <p class="text-slate-600 mt-3 text-base">Our consultants hold foreign post-graduate qualifications and decades of hospital experience.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Team Member 1 -->
-        <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col">
-          <div class="h-64 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" alt="Dr. Tariq Mahmood" class="w-full h-full object-cover">
+        
+        <!-- Doctor 1 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 flex flex-col">
+          <div class="h-72 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" alt="Prof. Dr. Tariq Mahmood" class="w-full h-full object-cover object-top">
           </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <h3 class="text-xl font-bold text-slate-900">Dr. Tariq Mahmood</h3>
-            <p class="text-xs font-semibold text-cyan-700 mb-1">BDS (KEMU), FCPS (Oral & Maxillofacial Surgery)</p>
-            <p class="text-xs text-slate-500 font-medium mb-3">Lead Dental Surgeon & Implantologist</p>
-            <p class="text-slate-600 text-sm leading-relaxed flex-1">
-              With over 15 years of clinical surgical experience at Mayo Hospital Lahore and private practice, Dr. Tariq specializes in dental implants, complex bone grafting, and wisdom teeth extractions.
-            </p>
-          </div>
-        </div>
-
-        <!-- Team Member 2 -->
-        <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col">
-          <div class="h-64 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1594824813570-78a33562633d?auto=format&fit=crop&w=600&q=80" alt="Dr. Ayesha Siddiqui" class="w-full h-full object-cover">
-          </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <h3 class="text-xl font-bold text-slate-900">Dr. Ayesha Siddiqui</h3>
-            <p class="text-xs font-semibold text-cyan-700 mb-1">BDS (de'Montmorency), MSc Ortho (Univ of London, UK)</p>
-            <p class="text-xs text-slate-500 font-medium mb-3">Consultant Orthodontist & Aligner Specialist</p>
-            <p class="text-slate-600 text-sm leading-relaxed flex-1">
-              Dr. Ayesha holds 12+ years of international expertise in adult and pediatric orthodontics, clear aligners, ceramic braces, and jaw alignment therapy.
-            </p>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="inline-block px-2.5 py-1 rounded bg-brand-100 text-brand-800 text-[11px] font-extrabold uppercase tracking-wider mb-2">Lead Surgeon</span>
+              <h4 class="text-xl font-bold text-slate-900">Prof. Dr. Tariq Mahmood</h4>
+              <p class="text-xs font-semibold text-brand-700 mt-0.5">BDS, FCPS (Oral & Maxillofacial Surgery)</p>
+              <p class="text-xs text-slate-500 font-medium mb-3">15+ Years Exp • Ex-Services Hospital Lahore</p>
+              <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                Specializes in complex wisdom tooth impactions, titanium dental implants, facial trauma, bone grafting, and TMJ joint disorders.
+              </p>
+            </div>
+            <div class="border-t border-slate-100 pt-3 text-xs text-slate-500 font-medium">
+              PMDC Reg #: 14820-D | CPSP Fellow
+            </div>
           </div>
         </div>
 
-        <!-- Team Member 3 -->
-        <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col">
-          <div class="h-64 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" alt="Dr. Usman Raza" class="w-full h-full object-cover">
+        <!-- Doctor 2 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 flex flex-col">
+          <div class="h-72 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1594824813570-78a33562633d?auto=format&fit=crop&w=600&q=80" alt="Dr. Zainab Bilal" class="w-full h-full object-cover object-top">
           </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <h3 class="text-xl font-bold text-slate-900">Dr. Usman Raza</h3>
-            <p class="text-xs font-semibold text-cyan-700 mb-1">BDS (UHS Lahore), Certified Endodontist</p>
-            <p class="text-xs text-slate-500 font-medium mb-3">Cosmetic & Restorative Dentist</p>
-            <p class="text-slate-600 text-sm leading-relaxed flex-1">
-              Dr. Usman specializes in painless single-visit root canals, porcelain veneers, teeth whitening, and aesthetic smile enhancements with 8+ years of dedicated practice.
-            </p>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="inline-block px-2.5 py-1 rounded bg-emerald-100 text-emerald-800 text-[11px] font-extrabold uppercase tracking-wider mb-2">Orthodontist</span>
+              <h4 class="text-xl font-bold text-slate-900">Dr. Zainab Bilal</h4>
+              <p class="text-xs font-semibold text-emerald-700 mt-0.5">BDS, MSc Orthodontics (Univ. of London, UK)</p>
+              <p class="text-xs text-slate-500 font-medium mb-3">Certified Invisalign Provider • 12+ Years Exp</p>
+              <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                Expert in clear aligner therapy, ceramic brackets, adult orthodontic realignment, and pediatric growth guidance.
+              </p>
+            </div>
+            <div class="border-t border-slate-100 pt-3 text-xs text-slate-500 font-medium">
+              PMDC Reg #: 18942-D | MOrth RCSEd UK
+            </div>
           </div>
         </div>
+
+        <!-- Doctor 3 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 flex flex-col">
+          <div class="h-72 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" alt="Dr. Hamza Shah" class="w-full h-full object-cover object-top">
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="inline-block px-2.5 py-1 rounded bg-sky-100 text-sky-800 text-[11px] font-extrabold uppercase tracking-wider mb-2">Endodontist</span>
+              <h4 class="text-xl font-bold text-slate-900">Dr. Hamza Shah</h4>
+              <p class="text-xs font-semibold text-sky-700 mt-0.5">BDS (UHS Lahore), RDS Endodontics</p>
+              <p class="text-xs text-slate-500 font-medium mb-3">Restorative Specialist • 8+ Years Exp</p>
+              <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                Specializes in single-visit painless root canals, composite aesthetic restorations, porcelain veneers, and laser whitening.
+              </p>
+            </div>
+            <div class="border-t border-slate-100 pt-3 text-xs text-slate-500 font-medium">
+              PMDC Reg #: 22105-D | UHS Graduate
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- CLINIC VALUES -->
-  <section class="py-16 bg-white">
+  <!-- STERILIZATION & WHO SAFETY BADGE -->
+  <section class="py-16 bg-white border-t border-slate-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-        <div class="p-6">
-          <div class="w-12 h-12 rounded-full bg-cyan-100 text-cyan-700 flex items-center justify-center mx-auto mb-4 font-bold text-xl">1</div>
-          <h4 class="text-lg font-bold text-slate-900 mb-2">Patient Comfort First</h4>
-          <p class="text-slate-600 text-sm">We provide gentle clinical care, noise-canceling headphones, and painless local anesthesia options.</p>
+      <div class="bg-emerald-950 text-white rounded-3xl p-8 lg:p-12 shadow-xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-8 space-y-4">
+          <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-emerald-800 text-emerald-200">
+            WHO Infection Control Compliance
+          </div>
+          <h3 class="text-3xl font-extrabold">Your Safety is Our Highest Priority</h3>
+          <p class="text-emerald-100 text-sm leading-relaxed">
+            We operate Class-B vacuum sterilizers with digital cycle validation tests. All handpieces, burs, and surgical trays are sealed in color-changing indicator pouches and opened strictly in front of the patient.
+          </p>
         </div>
-        <div class="p-6">
-          <div class="w-12 h-12 rounded-full bg-cyan-100 text-cyan-700 flex items-center justify-center mx-auto mb-4 font-bold text-xl">2</div>
-          <h4 class="text-lg font-bold text-slate-900 mb-2">Transparent Pricing</h4>
-          <p class="text-slate-600 text-sm">No hidden fees or surprise charges. We explain complete treatment plans and costs beforehand.</p>
-        </div>
-        <div class="p-6">
-          <div class="w-12 h-12 rounded-full bg-cyan-100 text-cyan-700 flex items-center justify-center mx-auto mb-4 font-bold text-xl">3</div>
-          <h4 class="text-lg font-bold text-slate-900 mb-2">State-of-the-Art Care</h4>
-          <p class="text-slate-600 text-sm">Equipped with European digital X-rays, intraoral scanners, and strict hospital-grade sterilization protocols.</p>
+        <div class="lg:col-span-4 text-center lg:text-right">
+          <a href="contact.html" class="inline-block px-8 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-sm shadow-lg transition">
+            Book Appointment Online
+          </a>
         </div>
       </div>
     </div>
@@ -217,78 +274,100 @@
   <footer class="bg-slate-900 text-slate-300 pt-16 pb-12 border-t border-slate-800 mt-auto">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-        <!-- Clinic Info -->
-        <div>
-          <div class="flex items-center space-x-3 mb-4">
-            <div class="w-9 h-9 rounded-lg bg-cyan-700 text-white flex items-center justify-center">
+        
+        <div class="space-y-4">
+          <div class="flex items-center space-x-3">
+            <div class="w-9 h-9 rounded-lg bg-brand-700 text-white flex items-center justify-center">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L5.594 15.12a2 2 0 00-1.583.336l-1.096.822A2 2 0 002.04 18.28l1.096.822a2 2 0 001.583.336l2.387-.477a6 6 0 013.86.517l.318.158a6 6 0 003.86.517l2.387-.477a2 2 0 001.022-.547l1.096-.822a2 2 0 00.875-1.996l-1.096-.822zM12 2a4 4 0 00-4 4v4a4 4 0 008 0V6a4 4 0 00-4-4z" />
               </svg>
             </div>
-            <span class="text-xl font-bold text-white tracking-tight">Lumina<span class="text-cyan-400">Dental</span></span>
+            <span class="text-xl font-extrabold text-white tracking-tight">Al-Razi <span class="text-cyan-400">Dental</span></span>
           </div>
-          <p class="text-slate-400 text-sm leading-relaxed mb-4">
-            Providing gentle, modern, and comprehensive dental care for patients of all ages in Lahore. Your smile is our passion.
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Leading clinic for Oral & Maxillofacial Surgery, Dental Implants, Invisalign, and Endodontic Care in Gulberg III, Lahore.
           </p>
-          <p class="text-slate-400 text-sm">© 2026 Lumina Dental Clinic. All rights reserved.</p>
+          <div class="pt-2 text-xs space-y-1.5 text-slate-400">
+            <p class="flex items-center text-emerald-400 font-semibold"><span class="mr-1.5">✓</span> PNC & PMDC Registered Practice</p>
+            <p class="flex items-center text-emerald-400 font-semibold"><span class="mr-1.5">✓</span> Sterilization certified according to WHO standards</p>
+          </div>
+          <div class="flex items-center space-x-3 pt-2">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-brand-700 text-slate-300 hover:text-white flex items-center justify-center transition"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-brand-700 text-slate-300 hover:text-white flex items-center justify-center transition"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-brand-700 text-slate-300 hover:text-white flex items-center justify-center transition"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+          </div>
         </div>
 
-        <!-- Quick Links -->
         <div>
-          <h4 class="text-white text-base font-semibold mb-4">Quick Links</h4>
+          <h4 class="text-white text-base font-bold mb-4">Navigation</h4>
           <ul class="space-y-2.5 text-sm">
             <li><a href="index.html" class="hover:text-cyan-400 transition">Home</a></li>
-            <li><a href="about.html" class="hover:text-cyan-400 transition">About Us</a></li>
-            <li><a href="services.html" class="hover:text-cyan-400 transition">Services & Treatments</a></li>
-            <li><a href="faq.html" class="hover:text-cyan-400 transition">Frequently Asked Questions</a></li>
+            <li><a href="about.html" class="hover:text-cyan-400 transition">About Our Clinic</a></li>
+            <li><a href="services.html" class="hover:text-cyan-400 transition">Treatments & Surgery</a></li>
+            <li><a href="faq.html" class="hover:text-cyan-400 transition">Patient FAQ</a></li>
             <li><a href="contact.html" class="hover:text-cyan-400 transition">Contact & Location</a></li>
           </ul>
         </div>
 
-        <!-- Services -->
         <div>
-          <h4 class="text-white text-base font-semibold mb-4">Our Services</h4>
+          <h4 class="text-white text-base font-bold mb-4">Specialized Services</h4>
           <ul class="space-y-2.5 text-sm">
-            <li><a href="services.html" class="hover:text-cyan-400 transition">General Dentistry</a></li>
-            <li><a href="services.html" class="hover:text-cyan-400 transition">Teeth Whitening</a></li>
-            <li><a href="services.html" class="hover:text-cyan-400 transition">Dental Implants</a></li>
-            <li><a href="services.html" class="hover:text-cyan-400 transition">Orthodontics & Aligners</a></li>
-            <li><a href="services.html" class="hover:text-cyan-400 transition">Emergency Dental Care</a></li>
+            <li><a href="services.html" class="hover:text-cyan-400 transition">Maxillofacial Surgery</a></li>
+            <li><a href="services.html" class="hover:text-cyan-400 transition">Titanium Dental Implants</a></li>
+            <li><a href="services.html" class="hover:text-cyan-400 transition">Invisalign Clear Aligners</a></li>
+            <li><a href="services.html" class="hover:text-cyan-400 transition">Painless Root Canal Therapy</a></li>
+            <li><a href="services.html" class="hover:text-cyan-400 transition">Porcelain Veneers</a></li>
           </ul>
         </div>
 
-        <!-- Contact Info -->
         <div>
-          <h4 class="text-white text-base font-semibold mb-4">Contact & Hours</h4>
+          <h4 class="text-white text-base font-bold mb-4">Clinic Hours & Info</h4>
           <ul class="space-y-3 text-sm text-slate-400">
             <li class="flex items-start space-x-3">
               <svg class="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-              <span>Suite 304, 3rd Floor, Al-Hafeez Heights, Main Boulevard, Gulberg III, Lahore</span>
+              <span>Suite 302, 3rd Floor, Al-Hafeez Heights, Ghalib Road, Gulberg III, Lahore</span>
             </li>
             <li class="flex items-center space-x-3">
               <svg class="w-5 h-5 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h32a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-              <a href="tel:+923347846180" class="hover:text-cyan-400 transition">+92 334 7846180</a>
+              <a href="tel:+924235789012" class="hover:text-cyan-400 transition">+92 42 35789012</a>
+            </li>
+            <li class="flex items-center space-x-3">
+              <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+              <a href="https://wa.me/923018472915?text=Hello%2C%20I%20want%20to%20book%20a%20dental%20appointment" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition">+92 301 8472915</a>
             </li>
             <li class="flex items-center space-x-3">
               <svg class="w-5 h-5 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-              <a href="mailto:contact@luminadental.pk" class="hover:text-cyan-400 transition">contact@luminadental.pk</a>
+              <a href="mailto:appointments@alrazidental.com" class="hover:text-cyan-400 transition">appointments@alrazidental.com</a>
             </li>
-            <li class="pt-2 text-xs text-slate-400">
-              Mon-Sat: 10:00 AM - 8:00 PM<br>
-              Sunday: Closed (Emergency On Call)
+            <li class="pt-2 text-xs text-slate-400 leading-relaxed">
+              Mon – Fri: 10:00 AM – 8:00 PM<br>
+              Sat: 11:00 AM – 6:00 PM<br>
+              Sun: Closed (Emergency on-call only)
             </li>
           </ul>
+        </div>
+
+      </div>
+
+      <div class="border-t border-slate-800 pt-8 text-xs text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p>© 2026 Al-Razi Dental & Maxillofacial Care. All rights reserved.</p>
+        <div class="flex space-x-6">
+          <a href="contact.html#privacy" class="hover:text-slate-400 transition">Privacy Policy</a>
+          <a href="contact.html#terms" class="hover:text-slate-400 transition">Terms of Care</a>
+          <a href="faq.html" class="hover:text-slate-400 transition">Patient Portal</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Floating WhatsApp CTA Button -->
-  <a href="https://wa.me/923347846180" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white p-3.5 rounded-full shadow-2xl flex items-center space-x-2 transition duration-300 transform hover:scale-105" aria-label="Chat on WhatsApp">
+  <!-- Floating Green WhatsApp CTA Widget -->
+  <a href="https://wa.me/923018472915?text=Hello%2C%20I%20want%20to%20book%20a%20dental%20appointment" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white p-3.5 rounded-full shadow-2xl flex items-center space-x-2 transition duration-300 transform hover:scale-105" aria-label="Chat on WhatsApp">
     <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
       <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
     </svg>
-    <span class="hidden sm:inline font-semibold text-sm">WhatsApp Us</span>
+    <span class="hidden sm:inline font-bold text-sm">WhatsApp Us</span>
   </a>
+
+<!-- CHATBOT -->
 </body>
 </html>
